@@ -1,4 +1,8 @@
 import boto3    
+# Intention of this script to find all instances with open ssh access or All traffic enabled
+# This will check all secuity group with breaches and check for instance attached  
+# A consolidated report will be send over a mail
+
 def lambda_handler(event, context): 
   alertMsg=""
   for region in ["ap-south-1","ap-southeast-1", "us-west-2"]:
